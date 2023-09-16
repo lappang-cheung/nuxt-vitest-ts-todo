@@ -5,6 +5,14 @@ const todoStore = useTodoStore()
 const newTodo = ref('');
 const error = ref(false)
 
+watch(error, (value:boolean) => {
+  if (value) {
+    setTimeout(() => {
+      error.value = false
+    }, 3000)
+  }
+})
+
 const saveNewTodo = () => {
   if (newTodo.value.length <= 0) {
     error.value = true
