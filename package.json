@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "scripts": {
+    "test": "vitest run --coverage",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@pinia/nuxt": "^0.4.11",
+    "@types/uuid": "^9.0.4",
+    "@vitest/coverage-v8": "^0.34.4",
+    "c8": "^8.0.1",
+    "nuxt": "^3.7.1",
+    "vitest": "^0.34.4"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
