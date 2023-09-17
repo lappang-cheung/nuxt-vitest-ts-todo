@@ -24,7 +24,6 @@ const saveNewTodo = () => {
   })
 
   newTodo.value = ''
-  console.log(todoStore.items)
 }
 </script>
 
