@@ -37,7 +37,7 @@ const saveNewTodo = () => {
     </section>
     <section class="md:w-8/12 md:mx-auto lg:w-6/12 py-4 rounded-lg">
       <todo-input v-model="newTodo" @save="saveNewTodo" :error="error"/>
-      <todo-list :items="todoStore.items"/>
+      <todo-list :items="todoStore.getOrderedTodos?.reverse()"/>
     </section>
   </main>
 </template>
